@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container perfil">
+        <h1>Meu Perfil</h1>
+        <p>Preencha seus dados abaixo.</p>
+
+        <form id="perfilForm">
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" required>
+
+            <label for="emailPerfil">E-mail:</label>
+            <input type="email" id="emailPerfil" required>
+
+            <label>Gênero:</label>
+            <div class="opcoes">
+                <label>
+                    <input type="radio" name="genero" value="Masculino" required>
+                    Masculino
+                </label>
+
+                <label>
+                    <input type="radio" name="genero" value="Feminino">
+                    Feminino
+                </label>
+
+                <label>
+                    <input type="radio" name="genero" value="Outro">
+                    Outro
+                </label>
+            </div>
+
+            <label>Interesses:</label>
+            <div class="opcoes">
+                <label>
+                    <input type="checkbox" name="interesses" value="Tecnologia">
+                    Tecnologia
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesses" value="Jogos">
+                    Jogos
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesses" value="Música">
+                    Música
+                </label>
+            </div>
+
+            <label for="cidade">Cidade:</label>
+            <select id="cidade" required>
+                <option value="">Selecione uma cidade</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Monte Azul Paulista">Monte Azul Paulista</option>
+                <option value="Ribeirão Preto">Ribeirão Preto</option>
+                <option value="Outra">Outra</option>
+            </select>
+
+            <label for="descricao">Sobre você:</label>
+            <textarea id="descricao" rows="4"
+            placeholder="Escreva um pouco sobre você..."></textarea>
+
+            <button type="submit">Salvar perfil</button>
+
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
